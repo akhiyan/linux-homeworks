@@ -1,0 +1,15 @@
+all: link
+
+link: main.o  complexNum.o  sorting.o
+
+main.o: main.cpp
+	g++ -c main.cpp
+
+complexNum.o: complexNum.cpp
+	g++ -c complexNum.cpp
+
+sorting.o: sorting.cpp
+	g++ -c sorting.cpp
+
+clean:
+	rm *.o link 
